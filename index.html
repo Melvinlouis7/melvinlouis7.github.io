@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>$PTP — Take the Pill</title>
+<style>
+:root{--accent:#2c8a4d;--bg:#f7f1e7;--text:#2b2b2b}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:var(--text);line-height:1.4}
+header{background:#fff;padding:18px 16px;display:flex;align-items:center;gap:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+header img{height:72px;border-radius:8px;object-fit:cover}
+.container{max-width:980px;margin:28px auto;padding:0 16px}
+h1{margin:0;font-size:28px}
+.tag{color:var(--accent);font-weight:700}
+section{background:rgba(255,255,255,0.6);padding:18px;border-radius:10px;margin-bottom:16px;box-shadow:0 1px 6px rgba(0,0,0,0.04)}
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:760px){.grid{grid-template-columns:1fr 320px}}
+.pill-counter{font-size:20px;font-weight:700;color:var(--accent)}
+footer{padding:12px;text-align:center;color:#666;font-size:14px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<header>
+<img src="banner.jpg" alt="$PTP banner (replace with your banner file)">
+<div>
+<h1>$PTP <span class="tag">Take the Pill. Promote the Fun. Give Back.</span></h1>
+<div style="margin-top:6px">Ticker: <strong>$PTP</strong> • Creator fees recycled for buybacks & donations</div>
+</div>
+</header>
+
+<main class="container">
+<section class="grid">
+<div>
+<h2>About</h2>
+<p>Promote the Pill ($PTP) is a community token built to promote Pump.fun and turn hype into real help. Part of the creator fees are recycled to support price momentum and fund community givebacks.</p>
+
+<h2>How it works</h2>
+<p>A small fee on trades is split: buybacks, giveaways, and direct donations. All movements will be posted on the Transparency page.</p>
+
+<h2>Roadmap</h2>
+<ul>
+<li>Phase 1: Launch & social growth</li>
+<li>Phase 2: First giveback event</li>
+<li>Phase 3: Buyback pushes</li>
+<li>Phase 4: Partnerships and expansion</li>
+</ul>
+</div>
+
+<aside>
+<div style="margin-bottom:12px;padding:12px;background:#fff;border-radius:8px">
+<div class="pill-counter">Pill Counter: <span id="pillCount">—</span></div>
+<small>Buys / holders will be shown here.</small>
+</div>
+
+<div style="padding:12px;background:#fff;border-radius:8px">
+<h3>Transparency</h3>
+<p>Creator wallet: <code>[PASTE WALLET]</code></p>
+<a class="btn" href="#transparency">See updates</a>
+</div>
+</aside>
+</section>
+
+<section>
+<h2>Community Givebacks</h2>
+<p>Street feedings, essentials drops, and community prize giveaways. Photos and receipts will be posted after each event.</p>
+</section>
+
+<section id="transparency">
+<h2>Transparency & Proof</h2>
+<p>All buybacks and donations will be posted here with screenshots and wallet tx links. Add photos below:</p>
+<!-- Replace with your proof images -->
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+<img src="proof1.jpg" alt="proof" style="width:160px;height:100px;object-fit:cover;border-radius:8px">
+<img src="proof2.jpg" alt="proof" style="width:160px;height:100px;object-fit:cover;border-radius:8px">
+</div>
+</section>
+</main>
+
+<footer>
+Join the community • Follow on X • Share the pill • © $PTP
+</footer>
+
+<script>
+// placeholder: if you later have an API to count buys, fetch and put it here.
+document.getElementById('pillCount').textContent = '0';
+</script>
+</body>
+</html>
